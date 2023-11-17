@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Translator App</title>
+</head>
+<body>
+    <h1>Please Say Something</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Translate Voice</button>
+    </form>
+    {% if recognized_text %}
+        <p>You said: {{ recognized_text }}</p>
+    {% endif %}
+    {% if translated_text %}
+        <p>Translation to Hindi: {{ translated_text }}</p>
+    {% endif %}
+</body>
+</html>

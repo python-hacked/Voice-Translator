@@ -1,0 +1,20 @@
+/* translator_app/static/translator_app/style.css */
+#translate-button {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Cursor pointer */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#translate-button img {
+    width: 30px; /* Adjust the width of the microphone icon */
+    height: auto;
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
